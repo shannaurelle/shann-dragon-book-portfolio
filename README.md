@@ -3,7 +3,7 @@
 ## Foreword
 
 This is my attempt at learning compiler design and construction 
-using the ultralearning approach with the Book Compilers: Principles,
+using the ultralearning approach with the book Compilers: Principles,
 Techniques, and Tools (2nd Edition). The book specifies its contents 
 to be good for six months in college, which already includes the essentials 
 in compiler construction as well as optimizations. However, my attempt will 
