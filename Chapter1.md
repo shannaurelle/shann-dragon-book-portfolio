@@ -60,7 +60,36 @@ itself. You are subsituting the value of the field to your own unique value
 and yet only after you finished writing the form to the receiver you get
 some feedback, which case if unfortunately you start all over again when
 you make a mistake by correcting the form that's another feedback you need
-to get before successfully submitting them.  
+to get before successfully submitting them. It's a painful experience for
+me writing forms as well as compiling without a debugger on computers. 
+Those events are equal in pain.
+
+In this section, we will get into the specific details of the compiler
+implementation. For this stage, the friendly conversation actually 
+details for us the stages in compiler implementation. When we separate
+words like RUG into letters R, U, and G we say we do some "lexical 
+analysis" on it by separating them into meaningful terms. These then are 
+determined if they are a subject, a verb, or some predicate which is now
+called "syntax analysis", and there are many ways to express this 
+relationship within our special buddy language. Substitution then happens 
+at this stage called "intermediate code generation". It can happen as a 
+whole (like PIC to IMG). 
+
+Then, we can perform two ways to optimize aka shorten our message and 
+still be understood. we can optimize after the replacing of IMG to 
+I AM GOOD to just GOOD (since our context is still within the response). 
+This in computers is similar to assembly level optimization, where in 
+computers the I AM GOOD is the finished lengthy machine code 
+and GOOD is the desirable short and sweet machine code for the computer 
+to happily run without errors. On the other hand, we can also shorten from 
+the IMG word itself and turn it into G. That is similar to compiler level 
+optimization, where we shorten the acronym (which is how assembly 
+languages relate to machine code) first before translating. Note that 
+shortening the acronym is optional. It is the same with computers. 
+You will encounter them often, so expect them. 
+
+
+ 
 
 
 
