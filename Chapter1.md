@@ -92,10 +92,9 @@ The last stage after these optimizations is the code generation stage.
 This is the I AM GOOD with the context now means I agree, we need to go
 visit that place. In computers, that would be from assembly language
 to machine code where only computers can understand them. Every machine
-will have their own codes, and that is why even if their language seems
-like both using ones and zeroes, the context already built into them
-matters, which makes two different machines interpret the same code 
-in a different manner.
+will have their own contexts. Even if their language seems like they both 
+use ones and zeroes, the context already built into them may differ, which 
+makes two different machines understand the same code in a different manner.
 
 
 
