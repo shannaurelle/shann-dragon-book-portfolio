@@ -96,6 +96,30 @@ will have their own contexts. Even if their language seems like they both
 use ones and zeroes, the context already built into them may differ, which 
 makes two different machines understand the same code in a different manner.
 
+That is really cool isn't it? I didn't know about compilers and translations
+like those special buddy languages have in common before. I came up with it
+while writing this chapter, though these only cover a small portion of what
+these little translating magic called compilers and interpreters can do.
+Aside from simulations, search engines, and your favorite voice assistants
+like Siri, you can use these to also make old games made for one machine
+work for another! I particularly love gaming, and I often get frustrated 
+when this game X of mine can't even be played into some gadget I commonly
+use. The key message when you want to say whether this activity can be close
+to compilers or interpreters is one word: replacement. If there's something
+hard, and yet it can be replaced into another thing which is easy, then a 
+compiler or interpreter can be used as a tool to make it happen. Note however 
+that replacements can be imperfect. This is a limitation to compilers
+or interpreters as well. Translations can get lost in meaning the more they
+are applied, and compilers and interpreters are never fail-safe.
+
+I hope you understand how replacements are the central theme to this section.
+Nothing can compare to the original. If it has to be exact and
+precise all the time, copying rather than replacing should be the goal. 
+However, if a replacement is fine for you, or even more desirable than the
+original, then welcome! You will enjoy how to create replacements for
+different kinds of actions performed using languages with compiler design
+and construction :>
+
 
 
 
