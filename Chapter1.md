@@ -1,6 +1,6 @@
 # Introduction
 
-When I was in eighth grade, I was learning how to code in C++/C. It was
+When I was in eighth grade, I learned how to code in C++/C. It was
 something difficult when I started dipping myself into unfamiliar words.
 Compile. Build. Run. I would type something on the keyboard, and being 
 a diligent student I would be super obedient and follow the instructions
