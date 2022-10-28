@@ -17,5 +17,7 @@ have any questions aside from the content I learned from the Dragon Book,
 feel free to contact me through email at shannaurelleg@gmail.com.
 
 ## Table Of Contents
+
+1. [Introduction to Compilers](https://github.com/shannaurelle/shann-dragon-book-portfolio/blob/master/Chapter1.md)
  
 
