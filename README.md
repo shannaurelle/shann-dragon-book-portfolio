@@ -5,9 +5,12 @@
 This is my attempt at learning this book using the ultralearning approach.
 The book specifies its contents to be good for six months in college, which
 already includes essentials in compiler construction as well as optimizations.
+However, my attempt will be done in three months or less, and that will
+include the writing, video lecture documentation, and other relevant visual
+aids.
 
 My style of narrating this entire journey would be different. Rather than
-simply telling all the content from the book, I would rather retell it 
+simply telling all the content from the book, I would rather tell it 
 from my own narrative. This may omit some details in the book, but I hope
 it will convey my own true understanding of the subject.
 
