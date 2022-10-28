@@ -84,9 +84,20 @@ and GOOD is the desirable short and sweet machine code for the computer
 to happily run without errors. On the other hand, we can also shorten from 
 the IMG word itself and turn it into G. That is similar to compiler level 
 optimization, where we shorten the acronym (which is how assembly 
-languages relate to machine code) first before translating. Note that 
-shortening the acronym is optional. It is the same with computers. 
+languages relate to machine code) first before translating into assembly. 
+Note that shortening the acronym is optional. It is the same with computers. 
 You will encounter them often, so expect them. 
+
+The last stage after these optimizations is the code generation stage.
+This is the I AM GOOD with the context now means I agree, we need to go
+visit that place. In computers, that would be from assembly language
+to machine code where only computers can understand them. Every machine
+will have their own codes, and that is why even if their language seems
+like both using ones and zeroes, the context already built into them
+matters, which makes two different machines interpret the same code 
+in a different manner.
+
+
 
 
  
