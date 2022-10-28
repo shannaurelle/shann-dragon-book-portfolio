@@ -24,6 +24,11 @@ is so kind and direct to call it "computer science sophistication". I
 promise you, once you return after learning these things you will appreciate 
 this portfolio.
 
+If you really know them, congratulations! I will be writing this assuming 
+you forget everything you read, so you have a headstart. For those who don't,
+it's also alright. This is intended for me to explain this in a long way, 
+so feel free to read along.  
+
 
 
  
