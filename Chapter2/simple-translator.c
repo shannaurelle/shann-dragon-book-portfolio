@@ -73,7 +73,7 @@ void expr(){
 
 int main(){
 
-// include translator structure right here :>
+// include translator driver code right here :>
 
 return 0;
 }
