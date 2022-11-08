@@ -32,6 +32,7 @@ term -> 0 {print(`0`)}
 
 // using the translation scheme, we can now make the program :>
 // NOTE: this is unoptimized and made only for instructive purposes
+int lookahead;
 
 // match() checks the syntax errors. Expects a integer input (for flexibility purposes).
 void match(){
@@ -43,9 +44,13 @@ void term(){
 
 }
 
-// prints the 
+// prints the operators + and -
 void rest(){
-
+	while(true){
+		if(lookahead == '+') match('+'); term(); printf("+"); continue;
+		else if(lookahead == '-') match('-'); term(); printf("-"); continue;
+		break;
+	}
 }
 
 void expr(){
