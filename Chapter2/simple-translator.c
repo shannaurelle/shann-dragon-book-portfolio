@@ -34,14 +34,19 @@ term -> 0 {print(`0`)}
 // NOTE: this is unoptimized and made only for instructive purposes
 int lookahead;
 
+void isDigit(int digit){
+	return (digit >= 48 && digit <= 57);
+}
+
 // match() checks the syntax errors. Expects a integer input (for flexibility purposes).
 void match(){
 
 }
 
-// prints the integer
+// prints the integer, if not integer alert a syntax error!
 void term(){
-
+	if(isDigit(lookahead)) printf("%c",lookahead); match(lookahead);
+	else printf("Syntax error! I expected an integer but I got none of it :< \n");
 }
 
 // prints the operators + and -
