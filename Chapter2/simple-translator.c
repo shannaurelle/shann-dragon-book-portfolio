@@ -66,6 +66,7 @@ void rest(){
 	}
 }
 
+// see the similarity to the translation scheme!
 void expr(){
 	term(); rest();
 }
