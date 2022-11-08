@@ -34,13 +34,21 @@ term -> 0 {print(`0`)}
 // NOTE: this is unoptimized and made only for instructive purposes
 int lookahead;
 
+// special wrapper function for receiving the next token to be read
+int next_token(){
+	// temporary return value for this function: null token
+	return 0;
+}
+
+// isDigit assumes integers collected are in ASCII form
 void isDigit(int digit){
 	return (digit >= 48 && digit <= 57);
 }
 
 // match() checks the syntax errors. Expects a integer input (for flexibility purposes).
-void match(){
-
+void match(int token){
+	if(lookahead == token) lookahead = next_token();
+	else printf("Syntax error! I expected a valid token but I got none of it :< \n");
 }
 
 // prints the integer, if not integer alert a syntax error!
