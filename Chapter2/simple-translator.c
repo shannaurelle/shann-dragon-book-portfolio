@@ -31,16 +31,19 @@ term -> 0 {print(`0`)}
 
 
 // using the translation scheme, we can now make the program :>
+// NOTE: this is unoptimized and made only for instructive purposes
 
-// match() checks the syntax errors. Expects a string input.
+// match() checks the syntax errors. Expects a integer input (for flexibility purposes).
 void match(){
 
 }
 
+// prints the integer
 void term(){
 
 }
 
+// prints the 
 void rest(){
 
 }
