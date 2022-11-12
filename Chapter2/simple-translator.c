@@ -1,6 +1,7 @@
 // Chapter 2: A syntax-directed translator in C
 
 #include <stdio.h>
+#include <stdlib.h>
 
 // include parser, lexer structures right here :>
 
@@ -32,7 +33,11 @@ term -> 0 {print(`0`)}
 
 // using the translation scheme, we can now make the program :>
 // NOTE: this is unoptimized and made only for instructive purposes
+
+// global variables
+#define MAX_LINE_LENGTH 1000
 int lookahead;
+char    ch;
 
 // special wrapper function for receiving the next token to be read
 int next_token(){
@@ -74,12 +79,9 @@ void expr(){
 int main(){
 
 // include translator driver code right here :>
- 
-#define MAX_LINE_LENGTH 1000
 FILE    *textfile;
-char    ch;
-     
-textfile = fopen("readme.txt", "r");
+
+textfile = fopen("simpletest.txt", "r");
 if(textfile == NULL)
         return 1;
 
