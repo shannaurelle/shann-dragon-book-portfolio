@@ -41,9 +41,9 @@ int lookahead;
 char    ch;
 
 // special wrapper function for receiving the next token to be read
-int next_token(char t_char){
-	if(c )
-	return fgetc(textfile);
+int next_token(){
+	// REMINDER: fgetc returns the ASCII code for the character
+	lookahead = fgetc(textfile);
 }
 
 // isDigit assumes integers collected are in ASCII form
@@ -53,7 +53,7 @@ void isDigit(int digit){
 
 // match() checks the syntax errors. Expects a integer input (for flexibility purposes).
 void match(char token){
-	if(lookahead == atoi(token)) lookahead = next_token(ch);
+	if(lookahead == atoi(token)) next_token();
 	else if(lookahead != EOF) printf("Syntax error! I expected a valid token but I got none of it :< \n");
 }
 
@@ -82,10 +82,8 @@ int main(){
 textfile = fopen("simpletest.txt", "r");
 if(textfile == NULL) return 1;
 
-// read character by character 
-while((ch = fgetc(textfile))!=EOF) {
-	putchar(ch);
-    }
+// read the whole expression using expr()
+expr();
      
 fclose(textfile);
 return 0;
