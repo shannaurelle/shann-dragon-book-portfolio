@@ -74,6 +74,21 @@ void expr(){
 int main(){
 
 // include translator driver code right here :>
+ 
+#define MAX_LINE_LENGTH 1000
+FILE    *textfile;
+char    ch;
+     
+textfile = fopen("readme.txt", "r");
+if(textfile == NULL)
+        return 1;
 
+// read character by character 
+while((ch = fgetc(textfile))!=EOF) {
+	putchar(ch);
+    }
+     
+fclose(textfile);
 return 0;
+
 }
