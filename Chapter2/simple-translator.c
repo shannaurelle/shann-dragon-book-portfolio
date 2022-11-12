@@ -36,13 +36,14 @@ term -> 0 {print(`0`)}
 
 // global variables
 #define MAX_LINE_LENGTH 1000
+FILE    *textfile;
 int lookahead;
 char    ch;
 
 // special wrapper function for receiving the next token to be read
-int next_token(){
-	// temporary return value for this function: null token
-	return 0;
+int next_token(char t_char){
+	if(c )
+	return fgetc(textfile);
 }
 
 // isDigit assumes integers collected are in ASCII form
@@ -51,18 +52,16 @@ void isDigit(int digit){
 }
 
 // match() checks the syntax errors. Expects a integer input (for flexibility purposes).
-void match(int token){
-	if(lookahead == token) lookahead = next_token();
-	else printf("Syntax error! I expected a valid token but I got none of it :< \n");
+void match(char token){
+	if(lookahead == atoi(token)) lookahead = next_token(ch);
+	else if(lookahead != EOF) printf("Syntax error! I expected a valid token but I got none of it :< \n");
 }
 
-// prints the integer, if not integer alert a syntax error!
 void term(){
 	if(isDigit(lookahead)) printf("%c",lookahead); match(lookahead);
-	else printf("Syntax error! I expected an integer but I got none of it :< \n");
+	else if(lookahead != EOF) printf("Syntax error! I expected an integer but I got none of it :< \n");
 }
 
-// prints the operators + and -
 void rest(){
 	while(true){
 		if(lookahead == '+') match('+'); term(); printf("+"); continue;
@@ -79,11 +78,9 @@ void expr(){
 int main(){
 
 // include translator driver code right here :>
-FILE    *textfile;
 
 textfile = fopen("simpletest.txt", "r");
-if(textfile == NULL)
-        return 1;
+if(textfile == NULL) return 1;
 
 // read character by character 
 while((ch = fgetc(textfile))!=EOF) {
