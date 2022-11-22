@@ -21,4 +21,5 @@ number	{digit}+(\.{digit}+)?(E[+-]?{digit}+)?
 if      {return(IF);}
 then	{return(THEN);}
 else 	{return(ELSE);}
+id		{yylval = (int) installID(); return(ID);}
 
