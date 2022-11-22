@@ -26,3 +26,4 @@ else 		{return(ELSE);}
 "<"			{yylval = LT; return(RELOP);}
 "<="		{yylval = LE; return(RELOP);}
 "="			{yylval = EQ; return(RELOP);}
+"<>"		{yylval = NE; return(RELOP);}
