@@ -24,5 +24,4 @@ else 		{return(ELSE);}
 {id}		{yylval = (int) installID(); return(ID);}
 {number}	{yylval = (int) installNum(); return(NUMBER);}
 "<"			{yylval = LT; return(RELOP);}
-
-
+"<="		{yylval = LE; return(RELOP);}
