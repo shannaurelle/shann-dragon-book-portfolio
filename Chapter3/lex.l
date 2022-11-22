@@ -20,4 +20,5 @@ number	{digit}+(\.{digit}+)?(E[+-]?{digit}+)?
 {ws}	{/* no action and no return */}
 if      {return(IF);}
 then	{return(THEN);}
+else 	{return(ELSE);}
 
