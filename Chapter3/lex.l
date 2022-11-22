@@ -17,9 +17,10 @@ number	{digit}+(\.{digit}+)?(E[+-]?{digit}+)?
 
 %%
 
-{ws}	{/* no action and no return */}
-if      {return(IF);}
-then	{return(THEN);}
-else 	{return(ELSE);}
-id		{yylval = (int) installID(); return(ID);}
+{ws}		{/* no action and no return */}
+if      	{return(IF);}
+then		{return(THEN);}
+else 		{return(ELSE);}
+{id}		{yylval = (int) installID(); return(ID);}
+{number}	{yylval = (int) installNum(); return(NUMBER);}
 
