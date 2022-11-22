@@ -32,10 +32,16 @@ else 		{return(ELSE);}
 
 %%
 
-int installNum(){
+int installID(){
 	/* function to call the lexeme, whose
 	first character is pointed to by yytext,
 	and whose length is yyleng, into the
 	symbol table and return a pointer
 	thereto */
+}
+
+int installNum(){
+	/* similar to installID, but puts
+	numerical constants into a separate
+	table */
 }
