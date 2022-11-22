@@ -24,8 +24,8 @@ feel free to contact me through email at shannaurelleg@gmail.com.
 ## Table Of Contents
 
 1. [Introduction](https://github.com/shannaurelle/shann-dragon-book-portfolio/blob/master/Chapter1.md)
-2. [A Simple Syntax-Directed Translator]()
-3. [Lexical Analysis]()
+2. [A Simple Syntax-Directed Translator](https://github.com/shannaurelle/shann-dragon-book-portfolio/blob/master/Chapter2.md)
+3. [Lexical Analysis](https://github.com/shannaurelle/shann-dragon-book-portfolio/blob/master/Chapter3.md)
 4. [Syntax Analysis]()
 5. [Syntax-Directed Translation]()
 6. [Intermediate-Code Generation]()
