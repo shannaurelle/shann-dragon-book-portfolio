@@ -25,3 +25,4 @@ else 		{return(ELSE);}
 {number}	{yylval = (int) installNum(); return(NUMBER);}
 "<"			{yylval = LT; return(RELOP);}
 "<="		{yylval = LE; return(RELOP);}
+"="			{yylval = EQ; return(RELOP);}
