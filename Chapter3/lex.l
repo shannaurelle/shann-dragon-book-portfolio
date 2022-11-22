@@ -28,3 +28,14 @@ else 		{return(ELSE);}
 "="			{yylval = EQ; return(RELOP);}
 "<>"		{yylval = NE; return(RELOP);}
 ">"			{yylval = GT; return(RELOP);}
+">="		{yylval = GE; return(RELOP);}
+
+%%
+
+int installNum(){
+	/* function to call the lexeme, whose
+	first character is pointed to by yytext,
+	and whose length is yyleng, into the
+	symbol table and return a pointer
+	thereto */
+}
