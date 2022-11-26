@@ -8,4 +8,7 @@
 
 ## Regular Expressions
 
-## Automata
+## Deterministic Finite Automata
+
+## Bzozowski's Algorithm
+
