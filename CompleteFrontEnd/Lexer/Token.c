@@ -3,7 +3,7 @@ and related helper functions */
 #include "stdio.h"
 #include "lexer.h"
 
-Token * initToken(int t){
+Token * createToken(int t){
 	Token * tk = malloc(sizeof(Token));
 	if(tk == NULL){
 		return NULL;
@@ -13,6 +13,11 @@ Token * initToken(int t){
 		return NULL;
 	}
 	return tk;
+}
+
+void deleteToken(Token * tk){
+	free(tk->tag);
+	free(tk);
 }
 
 char * TokentoString(Token * tk){
