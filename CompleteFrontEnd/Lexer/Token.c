@@ -16,10 +16,12 @@ char * TokentoString(Token * tk){
 }
 
 struct num{
+	Token * token;
 	const int value;
 }Num;
 
 void initNum(Num * n, int v){
+	n->token->tag = Tag.NUM;
 	n->value = v; 
 }
 
