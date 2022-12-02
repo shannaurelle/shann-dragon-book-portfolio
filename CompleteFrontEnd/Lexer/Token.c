@@ -6,7 +6,7 @@ struct token{
 }Token;
 
 void initToken(Token * tk, int t){
-	tk.tag = t;
+	tk->tag = t;
 }
 
 char * TokentoString(Token * tk){
@@ -19,3 +19,10 @@ struct num{
 	const int value;
 }Num;
 
+void initNum(Num * n, int v){
+	n->value = v; 
+}
+
+char * NumtoString(Num * n){
+	
+}
