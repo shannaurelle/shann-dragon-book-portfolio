@@ -1,5 +1,6 @@
 /* token data structure
 and related helper functions */
+#include "stdio.h"
 struct token{
 	const int tag;
 }Token;
@@ -12,7 +13,8 @@ void initToken(Token * tk, int t){
 	tk.tag = t;
 }
 
-char * toString(Token * tk){
-	// need to review this later
-	return ((char) tk.tag);
+char * TokentoString(Token * tk){
+	char * int_str;
+	sprintf(int_str,"%d",tk.tag);
+	return int_str;
 }
