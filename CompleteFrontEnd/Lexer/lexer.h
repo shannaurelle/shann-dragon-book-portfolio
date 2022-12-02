@@ -19,6 +19,7 @@ void deleteToken(Token * tk);
 char * TokentoString(Token * tk);
 
 // num helper functions
-void initNum(Num * n, int v);
+Num * createNum(int v);
+void deleteNum(Num * n);
 char * NumtoString(Num * n);
 
