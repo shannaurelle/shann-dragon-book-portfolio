@@ -24,5 +24,7 @@ void initNum(Num * n, int v){
 }
 
 char * NumtoString(Num * n){
-	
+	char * int_str;
+	sprintf(int_str,"%d",n.value);
+	return int_str;
 }
