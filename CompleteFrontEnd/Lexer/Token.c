@@ -45,6 +45,11 @@ Num * createNum(int v){
 	return n;
 }
 
+void deleteNum(Num * n){
+	free(n->value);
+	free(n);
+}
+
 char * NumtoString(Num * n){
 	char * int_str;
 	sprintf(int_str,"%d",n.value);
