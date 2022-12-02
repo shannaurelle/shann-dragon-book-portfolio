@@ -3,8 +3,16 @@ and related helper functions */
 #include "stdio.h"
 #include "lexer.h"
 
-void initToken(Token * tk, int t){
-	tk->tag = t;
+Token * initToken(int t){
+	Token * tk = malloc(sizeof(Token));
+	if(tk == NULL){
+		return NULL;
+	}
+	tk->tag = malloc(sizeof(int));
+	if(tk->tag == NULL){
+		return NULL;
+	}
+	return tk;
 }
 
 char * TokentoString(Token * tk){
