@@ -1,9 +1,7 @@
 /* token data structure
 and related helper functions */
 #include "stdio.h"
-struct token{
-	const int tag;
-}Token;
+#include "lexer.h"
 
 void initToken(Token * tk, int t){
 	tk->tag = t;

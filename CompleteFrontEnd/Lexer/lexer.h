@@ -1,5 +1,9 @@
 // unified header files for lexer
 
+// include declarations
+#include "Tag.h";
+#include "Token.h";
+
 // type definitions
 typedef struct tag Tag;
 typedef struct token Token;
