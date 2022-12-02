@@ -5,10 +5,6 @@ struct token{
 	const int tag;
 }Token;
 
-struct num{
-
-}Num;
-
 void initToken(Token * tk, int t){
 	tk.tag = t;
 }
@@ -18,3 +14,8 @@ char * TokentoString(Token * tk){
 	sprintf(int_str,"%d",tk.tag);
 	return int_str;
 }
+
+struct num{
+	const int value;
+}Num;
+
