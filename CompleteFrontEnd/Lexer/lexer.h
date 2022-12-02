@@ -14,7 +14,8 @@ typedef struct word Word;
 // prototype functions
 
 // token helper functions
-void initToken(Token * tk, int t);
+Token * createToken(int t);
+void deleteToken(Token * tk);
 char * TokentoString(Token * tk);
 
 // num helper functions
