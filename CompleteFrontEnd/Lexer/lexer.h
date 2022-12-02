@@ -3,11 +3,13 @@
 // include declarations
 #include "Tag.h";
 #include "Token.h";
+#include "Word.h";
 
 // type definitions
 typedef struct tag Tag;
 typedef struct token Token;
 typedef struct num Num;
+typedef struct word Word;
 
 // prototype functions
 

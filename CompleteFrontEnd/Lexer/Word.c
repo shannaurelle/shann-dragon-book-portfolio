@@ -1,0 +1,1 @@
+// word class member functions
