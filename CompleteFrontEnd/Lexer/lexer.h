@@ -2,9 +2,16 @@
 
 // type definitions
 typedef struct tag Tag;
-
-
-// constant definitions
-
+typedef struct token Token;
+typedef struct num Num;
 
 // prototype functions
+
+// token helper functions
+void initToken(Token * tk, int t);
+char * TokentoString(Token * tk);
+
+// num helper functions
+void initNum(Num * n, int v);
+char * NumtoString(Num * n);
+
