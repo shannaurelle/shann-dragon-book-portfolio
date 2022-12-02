@@ -12,6 +12,7 @@ Token * createToken(int t){
 	if(tk->tag == NULL){
 		return NULL;
 	}
+	tk->tag
 	return tk;
 }
 
@@ -28,12 +29,20 @@ char * TokentoString(Token * tk){
 
 struct num{
 	Token * token;
-	const int value;
+	const int * value;
 }Num;
 
-void initNum(Num * n, int v){
-	n->token->tag = Tag.NUM;
-	n->value = v; 
+Num * createNum(int v){
+	Num * n = malloc(sizeof(Num));
+	if(n == NULL){
+		return NULL;
+	}
+	n->value = malloc(sizeof(int));
+	if(tk->value == NULL){
+		return NULL;
+	}
+	n->value = v;
+	return n;
 }
 
 char * NumtoString(Num * n){

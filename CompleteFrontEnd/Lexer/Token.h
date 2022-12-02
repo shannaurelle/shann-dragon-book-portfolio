@@ -1,4 +1,4 @@
 // token data structure
 struct token{
-	const int tag;
+	const int * tag;
 }Token;
