@@ -5,7 +5,7 @@ struct token{
 }Token;
 
 struct num{
-	
+
 }Num;
 
 void initToken(Token * tk, int t){
@@ -13,5 +13,6 @@ void initToken(Token * tk, int t){
 }
 
 char * toString(Token * tk){
+	// need to review this later
 	return ((char) tk.tag);
 }
